@@ -1,21 +1,43 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+//Main Index file that compiles the website
+//React index.js includes all componenets
+import Hero from '../components/Hero.js';
+import About from '../components/About.js';
+import Projects from '../components/Projects.js';
+import ContactLinks from '../components/ContactLinks.js';
+import Footer from '../components/Footer.js';
+//Styling
+import '../scss/index.scss'
+//Import js projects and statements to be used in the respective componenets
+import projects from '../content/projects.js';
+import statements from '../content/about-me.js';
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
-
-export default IndexPage
+//This index will export default class Home using React components
+export default class Home extends React.PureComponent {
+  //Render the components to be sent to browser
+  render() {
+    return (
+      //Upon rendering the HTML will be sent
+      //Div home-container
+      <div id = "home" className="container-lg">
+        <Hero />
+        <h2 id="about" className="section-title">
+          About Me
+        </h2>
+        <About statements={statements} />
+        <h2 id="projects" className="section-title">
+          Featured Projects
+        </h2>
+        <Projects projects={projects} />
+        <div className="background" />
+        <h2 id="contact" className="section-title">
+          Let's get in touch!
+        </h2>
+        <ContactLinks />
+        <hr></hr>
+        <Footer />
+      </div>
+    );
+  }
+}

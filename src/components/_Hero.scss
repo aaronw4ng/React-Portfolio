@@ -1,0 +1,68 @@
+.hero-container {
+  margin: 0 auto;
+  margin-top: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  text {
+    font-weight: bold;
+  }
+
+  a {
+    font-weight: bold;
+  }
+
+  @include mobile {
+    margin-top: 15vh;
+  }
+
+  .hero-title {
+    font-family: 'Monaco', Consolas, 'Lucida Console', monospace;
+    font-size: 6em;
+    font-weight: bold;
+    color: black;
+
+    &:before {
+      content: '>\a0';
+    }
+
+    @include mobile {
+      font-size: 2.3em;
+    }
+
+    span {
+      background-color: rgba(black, 0.65);
+      animation: caret 1s steps(1) infinite;
+    }
+
+    @keyframes caret {
+      50% {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .hero-description {
+    font-family: 'Courier New';
+    //font-family: 'Camphor', Open Sans, Segoe UI, sans-serif;
+    font-weight: 500;
+    font-size: 2.05em;
+    line-height: 50px;
+    color: black;
+    margin: 80px 0;
+    margin-bottom: 50vh;
+    
+    span {
+      display: block;
+      margin-top: 3vh;
+    }
+
+    @include mobile {
+      font-size: 1.2em;
+      line-height: 30px;
+      max-width: 100%;
+      margin: 50px 0;
+    }
+  }
+}
