@@ -3,11 +3,11 @@
 @import 'colors';
 @import 'breakpoints';
 
-@import '../components/Hero';
-@import '../components/About';
-@import '../components/Projects';
-@import '../components/Contact';
-@import '../components/Footer';
+@import '../components/CSS/Hero';
+@import '../components/CSS/About';
+@import '../components/CSS/Projects';
+@import '../components/CSS/Contact';
+@import '../components/CSS/Footer';
 
 @font-face {
   font-family: 'Monaco';
@@ -76,7 +76,7 @@ a {
 }
 
 .section-title:after {
-  content: ' ';
+  content: '';
   border: 4px solid black;
   display: block;
   margin: 0 auto;

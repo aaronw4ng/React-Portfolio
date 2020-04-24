@@ -23,8 +23,4 @@ export default [
     return:
       '1. Scaling and improving <a href = "#projects"> GroceryGuide </a> <br> 2. Implementing full-stack Rate-My-Professor website application clone<br> 3. Developing recipe adjuster iOS App with React Native',
   },
-  {
-    input: "Projects:",
-    return: "Click <a href = '#projects'> here</a>!",
-  },
 ];
