@@ -1,9 +1,10 @@
 import React from "react"
-import FontAwesomeIcon from "@fortawesome/react-fontawesome"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faLink } from '@fortawesome/free-solid-svg-icons'
 
 class ProjectSkill extends React.PureComponent {
   render() {
-    return <span className="project-skill">{this.props.skill}</span>
+    return <span className="project-skill">{this.props.skill}</span> 
   }
 }
 
@@ -21,7 +22,7 @@ class ProjectSkills extends React.PureComponent {
 
 class ProjectLinks extends React.PureComponent {
   render() {
-    const { github, preview } = this.props.links
+    const { github } = this.props.links
     return (
       <div className="project-links">
         {/* <a
@@ -39,7 +40,7 @@ class ProjectLinks extends React.PureComponent {
           target="_blank"
           className="project-link secondary"
         >
-          View Source
+          <FontAwesomeIcon icon={faLink} /> View Source 
         </a>
       </div>
     )

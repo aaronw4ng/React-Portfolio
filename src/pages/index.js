@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from "react-helmet"
 
 //Main Index file that compiles the website
 //React index.js includes all componenets
@@ -19,8 +20,11 @@ export default class Home extends React.PureComponent {
   render() {
     return (
       //Upon rendering the HTML will be sent
-      //Div home-container
+      //Div home-container      
       <div id = "home" className="container-lg">
+        <Helmet>
+        <title>Aaron Wang</title>
+        </Helmet>
         <Hero />
         <h2 id="about" className="section-title">
           About Me

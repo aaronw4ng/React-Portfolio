@@ -14,7 +14,7 @@ class About extends React.PureComponent {
             </a>
               <div className="header-button yellow" />
             <div className="header-button green" />
-            <i> Aaron Wang — bash — </i>
+            <span> Aaron Wang — bash — </span>
           </div>
           <div className="terminal-window">
             {/* Will also return the statements which are updated by this component */}
