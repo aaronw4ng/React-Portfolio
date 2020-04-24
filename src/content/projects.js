@@ -17,6 +17,7 @@ export default [
       'HTML5',
       'CSS3',
       'ES6',
+      'Figma',
       'Apify',
       'Google APIs',
     ],

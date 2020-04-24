@@ -21,8 +21,9 @@ class Hero extends React.PureComponent {
           Learn more <Scrollchor to="#about">about me</Scrollchor>, check out my{' '}
           <a href="./Aaron_Wang_Resume.pdf" target="_blank">
             resume
-          </a>, my
-          <Scrollchor to="#projects"> experiences</Scrollchor> and/or my
+          </a>
+          {/* , my */}
+          {/* <Scrollchor to="#projects"> experiences</Scrollchor> */} and/or my 
           <Scrollchor to="#projects"> side-projects</Scrollchor>, or{' '}
           <Scrollchor to="#contact">connect</Scrollchor> with me!
         </div>
