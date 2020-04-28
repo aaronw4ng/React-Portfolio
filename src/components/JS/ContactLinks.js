@@ -33,7 +33,7 @@ class ContactLinks extends React.PureComponent {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://www.linkedin.com/in/aaronw4ng/"
+            href="https://github.com/aaronw4ng"
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
@@ -42,7 +42,7 @@ class ContactLinks extends React.PureComponent {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://github.com/aaronw4ng"
+            href="https://www.linkedin.com/in/aaronw4ng/"
           >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
