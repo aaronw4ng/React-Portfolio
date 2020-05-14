@@ -46,7 +46,7 @@ export default [
   },
   {
     title: 'BetterWeather',
-      description: 'BetterWeather is a website application that uses an Express server to return information from the OpenWeatherAPI based on the users queries. Using templated HTML pages, BetterWeather displays Javascript effects relevant to the weather conditions returned. BetterWeather saves preferences in a NoSQL database.',
+      description: 'BetterWeather is a website application that uses an Express server to return information from the OpenWeatherAPI based on the users queries. Using templated HTML pages, BetterWeather displays Javascript effects relevant to the weather conditions returned.',
     skills: [
       'HTML5',
       'CSS3',
